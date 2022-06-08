@@ -1,0 +1,321 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@8.11.0
+2 info using node@v16.15.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/usr/share/nginx/html/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 15ms
+11 timing config:load:file:/root/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 23ms
+19 timing npm:load:configload Completed in 23ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 1ms
+22 verbose title npm install request-promise
+23 verbose argv "install" "request-promise"
+24 timing npm:load:setTitle Completed in 1ms
+25 timing config:load:flatten Completed in 2ms
+26 timing npm:load:display Completed in 4ms
+27 verbose logfile logs-max:10 dir:/root/.npm/_logs
+28 verbose logfile /root/.npm/_logs/2022-06-08T02_44_53_354Z-debug-0.log
+29 timing npm:load:logFile Completed in 5ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 36ms
+33 timing arborist:ctor Completed in 1ms
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 121ms
+36 timing idealTree:userRequests Completed in 1ms
+37 silly idealTree buildDeps
+38 silly fetch manifest request-promise@*
+39 timing arborist:ctor Completed in 1ms
+40 http fetch GET 200 https://registry.npmjs.org/request-promise 135ms (cache miss)
+41 silly fetch manifest request@^2.88.2
+42 http fetch GET 200 https://registry.npmjs.org/request 12ms (cache hit)
+43 silly placeDep ROOT request-promise@4.2.6 OK for:  want: *
+44 silly fetch manifest request-promise-core@1.1.4
+45 silly fetch manifest bluebird@^3.5.0
+46 silly fetch manifest stealthy-require@^1.1.1
+47 http fetch GET 200 https://registry.npmjs.org/request-promise-core 39ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/stealthy-require 41ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/bluebird 64ms (cache miss)
+50 timing idealTree:#root Completed in 230ms
+51 silly fetch manifest request@^2.34
+52 silly placeDep ROOT bluebird@3.7.2 OK for: request-promise@4.2.6 want: ^3.5.0
+53 silly placeDep ROOT request-promise-core@1.1.4 OK for: request-promise@4.2.6 want: 1.1.4
+54 silly placeDep ROOT stealthy-require@1.1.1 OK for: request-promise@4.2.6 want: ^1.1.1
+55 silly fetch manifest lodash@^4.17.19
+56 http fetch GET 200 https://registry.npmjs.org/lodash 33ms (cache miss)
+57 timing idealTree:node_modules/request-promise Completed in 40ms
+58 timing idealTree:node_modules/bluebird Completed in 0ms
+59 silly placeDep ROOT lodash@4.17.21 OK for: request-promise-core@1.1.4 want: ^4.17.19
+60 timing idealTree:node_modules/request-promise-core Completed in 4ms
+61 timing idealTree:node_modules/lodash Completed in 0ms
+62 timing idealTree:node_modules/stealthy-require Completed in 0ms
+63 timing idealTree:buildDeps Completed in 275ms
+64 timing idealTree:fixDepFlags Completed in 4ms
+65 timing idealTree Completed in 407ms
+66 timing reify:loadTrees Completed in 409ms
+67 timing reify:diffTrees Completed in 4ms
+68 silly reify moves {}
+69 timing reify:retireShallow Completed in 1ms
+70 timing reify:createSparse Completed in 3ms
+71 timing reify:loadBundles Completed in 0ms
+72 silly audit bulk request {
+72 silly audit   '@sindresorhus/is': [ '0.14.0' ],
+72 silly audit   '@szmarczak/http-timer': [ '1.1.2' ],
+72 silly audit   abbrev: [ '1.1.1' ],
+72 silly audit   ajv: [ '6.12.6' ],
+72 silly audit   'ansi-align': [ '3.0.1' ],
+72 silly audit   'ansi-regex': [ '5.0.1' ],
+72 silly audit   'ansi-styles': [ '4.3.0' ],
+72 silly audit   anymatch: [ '3.1.2' ],
+72 silly audit   asn1: [ '0.2.6' ],
+72 silly audit   'assert-plus': [ '1.0.0' ],
+72 silly audit   async: [ '0.2.10' ],
+72 silly audit   asynckit: [ '0.4.0' ],
+72 silly audit   'aws-sign2': [ '0.7.0' ],
+72 silly audit   aws4: [ '1.11.0' ],
+72 silly audit   'balanced-match': [ '1.0.2' ],
+72 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+72 silly audit   'binary-extensions': [ '2.2.0' ],
+72 silly audit   'binary-search-tree': [ '0.2.5' ],
+72 silly audit   boxen: [ '5.1.2' ],
+72 silly audit   'brace-expansion': [ '1.1.11' ],
+72 silly audit   braces: [ '3.0.2' ],
+72 silly audit   'cacheable-request': [ '6.1.0' ],
+72 silly audit   'get-stream': [ '5.2.0', '4.1.0' ],
+72 silly audit   'lowercase-keys': [ '2.0.0', '1.0.1' ],
+72 silly audit   camelcase: [ '6.3.0' ],
+72 silly audit   caseless: [ '0.12.0' ],
+72 silly audit   chalk: [ '4.1.2' ],
+72 silly audit   'has-flag': [ '4.0.0', '3.0.0' ],
+72 silly audit   'supports-color': [ '7.2.0', '5.5.0' ],
+72 silly audit   chokidar: [ '3.5.3' ],
+72 silly audit   'ci-info': [ '2.0.0' ],
+72 silly audit   'cli-boxes': [ '2.2.1' ],
+72 silly audit   'clone-response': [ '1.0.2' ],
+72 silly audit   'color-convert': [ '2.0.1' ],
+72 silly audit   'color-name': [ '1.1.4' ],
+72 silly audit   'combined-stream': [ '1.0.8' ],
+72 silly audit   'concat-map': [ '0.0.1' ],
+72 silly audit   configstore: [ '5.0.1' ],
+72 silly audit   'core-util-is': [ '1.0.2' ],
+72 silly audit   'crypto-random-string': [ '2.0.0' ],
+72 silly audit   dashdash: [ '1.14.1' ],
+72 silly audit   'data-uri-to-buffer': [ '4.0.0' ],
+72 silly audit   'decompress-response': [ '3.3.0' ],
+72 silly audit   'deep-extend': [ '0.6.0' ],
+72 silly audit   'defer-to-connect': [ '1.1.3' ],
+72 silly audit   'delayed-stream': [ '1.0.0' ],
+72 silly audit   'dot-prop': [ '5.3.0' ],
+72 silly audit   duplexer3: [ '0.1.4' ],
+72 silly audit   'ecc-jsbn': [ '0.1.2' ],
+72 silly audit   'emoji-regex': [ '8.0.0' ],
+72 silly audit   'end-of-stream': [ '1.4.4' ],
+72 silly audit   'escape-goat': [ '2.1.1' ],
+72 silly audit   extend: [ '3.0.2' ],
+72 silly audit   extsprintf: [ '1.3.0' ],
+72 silly audit   'fast-deep-equal': [ '3.1.3' ],
+72 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+72 silly audit   'fetch-blob': [ '3.1.5' ],
+72 silly audit   'fill-range': [ '7.0.1' ],
+72 silly audit   'forever-agent': [ '0.6.1' ],
+72 silly audit   'form-data': [ '2.3.3' ],
+72 silly audit   'formdata-polyfill': [ '4.0.10' ],
+72 silly audit   getpass: [ '0.1.7' ],
+72 silly audit   'glob-parent': [ '5.1.2' ],
+72 silly audit   'global-dirs': [ '3.0.0' ],
+72 silly audit   got: [ '9.6.0' ],
+72 silly audit   'graceful-fs': [ '4.2.10' ],
+72 silly audit   'har-schema': [ '2.0.0' ],
+72 silly audit   'har-validator': [ '5.1.5' ],
+72 silly audit   'has-yarn': [ '2.1.0' ],
+72 silly audit   'http-cache-semantics': [ '4.1.0' ],
+72 silly audit   'http-signature': [ '1.2.0' ],
+72 silly audit   'ignore-by-default': [ '1.0.1' ],
+72 silly audit   immediate: [ '3.0.6' ],
+72 silly audit   'import-lazy': [ '2.1.0' ],
+72 silly audit   imurmurhash: [ '0.1.4' ],
+72 silly audit   ini: [ '2.0.0', '1.3.8' ],
+72 silly audit   'is-binary-path': [ '2.1.0' ],
+72 silly audit   'is-ci': [ '2.0.0' ],
+72 silly audit   'is-extglob': [ '2.1.1' ],
+72 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+72 silly audit   'is-glob': [ '4.0.3' ],
+72 silly audit   'is-installed-globally': [ '0.4.0' ],
+72 silly audit   'is-npm': [ '5.0.0' ],
+72 silly audit   'is-number': [ '7.0.0' ],
+72 silly audit   'is-obj': [ '2.0.0' ],
+72 silly audit   'is-path-inside': [ '3.0.3' ],
+72 silly audit   'is-typedarray': [ '1.0.0' ],
+72 silly audit   'is-yarn-global': [ '0.3.0' ],
+72 silly audit   isstream: [ '0.1.2' ],
+72 silly audit   jsbn: [ '0.1.1' ],
+72 silly audit   'json-buffer': [ '3.0.0' ],
+72 silly audit   'json-schema': [ '0.4.0' ],
+72 silly audit   'json-schema-traverse': [ '0.4.1' ],
+72 silly audit   'json-stringify-safe': [ '5.0.1' ],
+72 silly audit   jsprim: [ '1.4.2' ],
+72 silly audit   keyv: [ '3.1.0' ],
+72 silly audit   'latest-version': [ '5.1.0' ],
+72 silly audit   lie: [ '3.1.1' ],
+72 silly audit   localforage: [ '1.10.0' ],
+72 silly audit   'lru-cache': [ '6.0.0' ],
+72 silly audit   'make-dir': [ '3.1.0' ],
+72 silly audit   semver: [ '6.3.0', '5.7.1', '7.3.7' ],
+72 silly audit   'mime-db': [ '1.52.0' ],
+72 silly audit   'mime-types': [ '2.1.35' ],
+72 silly audit   'mimic-response': [ '1.0.1' ],
+72 silly audit   minimatch: [ '3.1.2' ],
+72 silly audit   minimist: [ '1.2.6' ],
+72 silly audit   mkdirp: [ '0.5.6' ],
+72 silly audit   nedb: [ '1.8.0' ],
+72 silly audit   'node-domexception': [ '1.0.0' ],
+72 silly audit   'node-fetch': [ '3.2.5' ],
+72 silly audit   nodemon: [ '2.0.16' ],
+72 silly audit   debug: [ '3.2.7' ],
+72 silly audit   ms: [ '2.1.3' ],
+72 silly audit   nopt: [ '1.0.10' ],
+72 silly audit   'normalize-path': [ '3.0.0' ],
+72 silly audit   'normalize-url': [ '4.5.1' ],
+72 silly audit   'oauth-sign': [ '0.9.0' ],
+72 silly audit   once: [ '1.4.0' ],
+72 silly audit   'p-cancelable': [ '1.1.0' ],
+72 silly audit   'package-json': [ '6.5.0' ],
+72 silly audit   'performance-now': [ '2.1.0' ],
+72 silly audit   picomatch: [ '2.3.1' ],
+72 silly audit   'prepend-http': [ '2.0.0' ],
+72 silly audit   psl: [ '1.8.0' ],
+72 silly audit   'pstree.remy': [ '1.1.8' ],
+72 silly audit   pump: [ '3.0.0' ],
+72 silly audit   punycode: [ '2.1.1' ],
+72 silly audit   pupa: [ '2.1.1' ],
+72 silly audit   qs: [ '6.5.3' ],
+72 silly audit   rc: [ '1.2.8' ],
+72 silly audit   readdirp: [ '3.6.0' ],
+72 silly audit   'registry-auth-token': [ '4.2.1' ],
+72 silly audit   'registry-url': [ '5.1.0' ],
+72 silly audit   request: [ '2.88.2' ],
+72 silly audit   responselike: [ '1.0.2' ],
+72 silly audit   'safe-buffer': [ '5.2.1' ],
+72 silly audit   'safer-buffer': [ '2.1.2' ],
+72 silly audit   'semver-diff': [ '3.1.1' ],
+72 silly audit   'signal-exit': [ '3.0.7' ],
+72 silly audit   sshpk: [ '1.17.0' ],
+72 silly audit   'string-width': [ '4.2.3' ],
+72 silly audit   'strip-ansi': [ '6.0.1' ],
+72 silly audit   'strip-json-comments': [ '2.0.1' ],
+72 silly audit   'to-readable-stream': [ '1.0.0' ],
+72 silly audit   'to-regex-range': [ '5.0.1' ],
+72 silly audit   touch: [ '3.1.0' ],
+72 silly audit   'tough-cookie': [ '2.5.0' ],
+72 silly audit   'tunnel-agent': [ '0.6.0' ],
+72 silly audit   tweetnacl: [ '0.14.5' ],
+72 silly audit   'type-fest': [ '0.20.2' ],
+72 silly audit   'typedarray-to-buffer': [ '3.1.5' ],
+72 silly audit   undefsafe: [ '2.0.5' ],
+72 silly audit   underscore: [ '1.4.4' ],
+72 silly audit   'unique-string': [ '2.0.0' ],
+72 silly audit   'update-notifier': [ '5.1.0' ],
+72 silly audit   'uri-js': [ '4.4.1' ],
+72 silly audit   'url-parse-lax': [ '3.0.0' ],
+72 silly audit   uuid: [ '3.4.0' ],
+72 silly audit   verror: [ '1.10.0' ],
+72 silly audit   'web-streams-polyfill': [ '3.2.1' ],
+72 silly audit   'widest-line': [ '3.1.0' ],
+72 silly audit   'wrap-ansi': [ '7.0.0' ],
+72 silly audit   wrappy: [ '1.0.2' ],
+72 silly audit   'write-file-atomic': [ '3.0.3' ],
+72 silly audit   'xdg-basedir': [ '4.0.0' ],
+72 silly audit   yallist: [ '4.0.0' ],
+72 silly audit   'request-promise': [ '4.2.6' ],
+72 silly audit   bluebird: [ '3.7.2' ],
+72 silly audit   'request-promise-core': [ '1.1.4' ],
+72 silly audit   'stealthy-require': [ '1.1.1' ],
+72 silly audit   lodash: [ '4.17.21' ]
+72 silly audit }
+73 silly tarball no local data for stealthy-require@https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz. Extracting by manifest.
+74 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 86ms
+75 timing auditReport:getReport Completed in 91ms
+76 silly audit report {
+76 silly audit report   nedb: [
+76 silly audit report     {
+76 silly audit report       id: 1067828,
+76 silly audit report       url: 'https://github.com/advisories/GHSA-339j-hqgx-qrrx',
+76 silly audit report       title: 'Prototype Pollution',
+76 silly audit report       severity: 'high',
+76 silly audit report       vulnerable_versions: '<=1.8.0',
+76 silly audit report       cwe: [Array],
+76 silly audit report       cvss: [Object]
+76 silly audit report     }
+76 silly audit report   ],
+76 silly audit report   underscore: [
+76 silly audit report     {
+76 silly audit report       id: 1068134,
+76 silly audit report       url: 'https://github.com/advisories/GHSA-cf4h-3jhx-xvhq',
+76 silly audit report       title: 'Arbitrary Code Execution in underscore',
+76 silly audit report       severity: 'high',
+76 silly audit report       vulnerable_versions: '>=1.3.2 <1.12.1',
+76 silly audit report       cwe: [Array],
+76 silly audit report       cvss: [Object]
+76 silly audit report     }
+76 silly audit report   ]
+76 silly audit report }
+77 timing metavuln:cache:get:security-advisory:nedb:3Z43GH9XaCaNUAuUBnayL3PH2z2etocPDSnCf6rpRtY2/wfil0oHam9KQi2x01UHXDMFldl7NfswARCyxvbzOw== Completed in 11ms
+78 timing metavuln:cache:get:security-advisory:underscore:Gnjmi1IOOUemQLeLgz5wRwLH47Eo9UznXoQR7+paJUZ5akz/mDNxKZhNia4PfEO25soJ4Pui+zZrnP/UDRFcrg== Completed in 11ms
+79 warn deprecated request-promise@4.2.6: request-promise has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+80 timing reifyNode:node_modules/request-promise Completed in 98ms
+81 timing reifyNode:node_modules/request-promise-core Completed in 102ms
+82 http fetch GET 200 https://registry.npmjs.org/nedb 21ms (cache hit)
+83 timing metavuln:packument:nedb Completed in 23ms
+84 timing metavuln:load:security-advisory:nedb:1067828 Completed in 1ms
+85 timing metavuln:calculate:security-advisory:nedb:1067828 Completed in 24ms
+86 http fetch GET 200 https://registry.npmjs.org/underscore 23ms (cache hit)
+87 timing metavuln:packument:underscore Completed in 24ms
+88 timing metavuln:load:security-advisory:underscore:1068134 Completed in 0ms
+89 timing metavuln:calculate:security-advisory:underscore:1068134 Completed in 24ms
+90 timing metavuln:cache:get:security-advisory:binary-search-tree:gj/ZEmOnT87Hvlmaq5yc1Mc1yNrFWUgiZcnN2xSDSTrQ8fhpNGy5r0Uh/bfbnXv0BfCvGw35yDKBdnTB/7PNfg== Completed in 5ms
+91 timing metavuln:cache:get:security-advisory:nedb:zpLvV2oU0+mjzKzY5cf3zDYqg6J7Y/cXxuVgloEMJ1p9VEV+6PahjSlcvCdKCJ4tEs55a0kdoy+VTtH08HR2ug== Completed in 6ms
+92 timing metavuln:load:security-advisory:nedb:Gnjmi1IOOUemQLeLgz5wRwLH47Eo9UznXoQR7+paJUZ5akz/mDNxKZhNia4PfEO25soJ4Pui+zZrnP/UDRFcrg== Completed in 2ms
+93 timing metavuln:calculate:security-advisory:nedb:Gnjmi1IOOUemQLeLgz5wRwLH47Eo9UznXoQR7+paJUZ5akz/mDNxKZhNia4PfEO25soJ4Pui+zZrnP/UDRFcrg== Completed in 8ms
+94 http fetch GET 200 https://registry.npmjs.org/binary-search-tree 15ms (cache hit)
+95 timing metavuln:packument:binary-search-tree Completed in 15ms
+96 timing metavuln:load:security-advisory:binary-search-tree:Gnjmi1IOOUemQLeLgz5wRwLH47Eo9UznXoQR7+paJUZ5akz/mDNxKZhNia4PfEO25soJ4Pui+zZrnP/UDRFcrg== Completed in 1ms
+97 timing metavuln:calculate:security-advisory:binary-search-tree:Gnjmi1IOOUemQLeLgz5wRwLH47Eo9UznXoQR7+paJUZ5akz/mDNxKZhNia4PfEO25soJ4Pui+zZrnP/UDRFcrg== Completed in 16ms
+98 timing metavuln:cache:get:security-advisory:nedb:EgKdVAjXCYxT+YQqZdvBgro00w/ewoshJrPXf5rUtNfmakI3rxA5GDWDAtKqSXozwLkvtAu7LB1jLLWBrn837A== Completed in 32ms
+99 timing metavuln:load:security-advisory:nedb:gj/ZEmOnT87Hvlmaq5yc1Mc1yNrFWUgiZcnN2xSDSTrQ8fhpNGy5r0Uh/bfbnXv0BfCvGw35yDKBdnTB/7PNfg== Completed in 0ms
+100 timing metavuln:calculate:security-advisory:nedb:gj/ZEmOnT87Hvlmaq5yc1Mc1yNrFWUgiZcnN2xSDSTrQ8fhpNGy5r0Uh/bfbnXv0BfCvGw35yDKBdnTB/7PNfg== Completed in 33ms
+101 timing auditReport:init Completed in 81ms
+102 timing reify:audit Completed in 173ms
+103 http fetch GET 200 https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz 167ms (cache miss)
+104 timing reifyNode:node_modules/stealthy-require Completed in 176ms
+105 timing reifyNode:node_modules/bluebird Completed in 183ms
+106 timing reifyNode:node_modules/lodash Completed in 367ms
+107 timing reify:unpack Completed in 367ms
+108 timing reify:unretire Completed in 0ms
+109 timing build:queue Completed in 1ms
+110 timing build:deps Completed in 1ms
+111 timing build Completed in 1ms
+112 timing reify:build Completed in 2ms
+113 timing reify:trash Completed in 0ms
+114 timing reify:save Completed in 40ms
+115 timing reify Completed in 869ms
+116 silly ADD node_modules/lodash
+117 silly ADD node_modules/stealthy-require
+118 silly ADD node_modules/request-promise-core
+119 silly ADD node_modules/bluebird
+120 silly ADD node_modules/request-promise
+121 timing command:install Completed in 884ms
+122 verbose exit 0
+123 timing npm Completed in 972ms
+124 info ok
